@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del Ahorcado</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <header>
+            <h1>EL AHORCADO</h1>
+            <p class="subtitulo">
+                ¡Descubre la palabra antes de que se complete el dibujo!
+            </p>
+        </header>
+
+        <div class="contenido">
+
+            <div class="zona-juego">
+
+                <h2>Tu desafío</h2>
+
+                <canvas id="canvasAhorcado" width="350" height="300">
+                    Tu navegador no admite Canvas.
+                </canvas>
+
+                <div class="estadisticas">
+
+                    <div class="dato">
+                        <span>ERRORES</span>
+                        <strong id="contador-errores">0 / 6</strong>
+                    </div>
+
+                    <div class="dato">
+                        <span>PUNTUACIÓN</span>
+                        <strong id="puntuacion">0</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="zona-palabra">
+
+                <h2>Palabra secreta</h2>
+
+                <div id="palabra-pantalla" class="palabra"></div>
+
+                <p class="instruccion">
+                    Selecciona una letra para descubrir la palabra.
+                </p>
+
+                <h3>Elige una letra</h3>
+
+                <div id="teclado" class="teclado"></div>
+
+                <p id="mensaje" class="mensaje"></p>
+
+                <div class="botones">
+
+                    <button id="boton-pausar" class="btn btn-pausa">
+                        Pausar
+                    </button>
+
+                    <button id="boton-reiniciar" class="btn btn-reiniciar">
+                        Reiniciar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <footer>
+            <p>Desafía tu mente • Aprende jugando</p>
+        </footer>
+
+    </div>
+
+    <script src="js/codigo.js"></script>
+
+</body>
+</html>
